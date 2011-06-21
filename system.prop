@@ -1,0 +1,6 @@
+#
+# system.prop for maguro
+#
+
+rild.libpath=/vendor/lib/libsec-ril.so
+rild.libargs=-d /dev/ttys0
