@@ -7,5 +7,6 @@
 /misc 		emmc 		/dev/block/platform/omap/omap_hsmmc.0/by-name/misc
 /boot		emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/boot
 /recovery	emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/recovery
-/bootloader	mtd		bootloader
-/radio		mtd		radio
+/sbl		emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/sbl
+/xloader	emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/xloader
+/radio		emmc		/dev/block/platform/omap/omap_hsmmc.0/by-name/radio
