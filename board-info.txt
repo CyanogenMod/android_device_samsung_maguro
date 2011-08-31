@@ -1,4 +1,4 @@
 require board=tuna
-require version-bootloader=PRIMEKH08
+require version-bootloader=PRIMEKH09
 require version-baseband=I9250XXKH1
 
