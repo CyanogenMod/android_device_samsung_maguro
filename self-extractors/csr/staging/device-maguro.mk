@@ -14,7 +14,8 @@
 
 LOCAL_PATH := vendor/csr/maguro
 
-# CSR blobs necessary for Maguro hardware
+# CSR blob(s) necessary for Maguro hardware
 PRODUCT_COPY_FILES := \
+    $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
     $(LOCAL_PATH)/proprietary/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so \
-    $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf
+

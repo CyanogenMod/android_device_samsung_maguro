@@ -14,6 +14,7 @@
 
 LOCAL_PATH := vendor/nxp/maguro
 
-# NXP blob necessary for Maguro hardware
+# NXP blob(s) necessary for Maguro hardware
 PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so
+    $(LOCAL_PATH)/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
+

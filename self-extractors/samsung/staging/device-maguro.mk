@@ -14,7 +14,8 @@
 
 LOCAL_PATH := vendor/samsung/maguro
 
-# Samsung blobs necessary for Maguro hardware
+# Samsung blob(s) necessary for Maguro hardware
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
-    $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so
+    $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
+

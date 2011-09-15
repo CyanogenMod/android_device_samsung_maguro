@@ -16,13 +16,14 @@
 
 # 155376 = IRK28C
 # 156135 = IRK32
-ZIP=yakju-ota-156135.zip
-BUILD=irk32
+# 186921 = IRK77
+ZIP=yakju-ota-186921.zip
+BUILD=irk77
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
 
-for COMPANY in broadcom csr imgtec nxp samsung ti
+for COMPANY in broadcom csr imgtec invensense nxp samsung ti widevine
 do
   echo Processing files from $COMPANY
   rm -rf tmp
@@ -37,8 +38,8 @@ do
     ;;
   csr)
     TO_EXTRACT="\
-            system/vendor/lib/hw/gps.omap4.so \
             system/vendor/etc/sirfgps.conf \
+            system/vendor/lib/hw/gps.omap4.so \
             "
     ;;
   imgtec)
@@ -58,6 +59,11 @@ do
             system/vendor/lib/libusc.so \
             "
     ;;
+  invensense)
+    TO_EXTRACT="\
+            system/vendor/lib/libinvensense_mpl.so \
+            "
+    ;;
   nxp)
     TO_EXTRACT="\
             system/vendor/firmware/libpn544_fw.so \
@@ -72,6 +78,15 @@ do
   ti)
     TO_EXTRACT="\
             system/vendor/firmware/ducati-m3.bin \
+            "
+    ;;
+  widevine)
+    TO_EXTRACT="\
+            system/etc/permissions/com.google.widevine.software.drm.xml \
+            system/lib/drm/libdrmwvmplugin.so \
+            system/lib/libwvdrm_L3.so \
+            system/lib/libwvm.so \
+            system/lib/libWVStreamControlAPI_L3.so \
             "
     ;;
   esac

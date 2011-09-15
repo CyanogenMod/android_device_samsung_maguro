@@ -17,6 +17,8 @@ LOCAL_STEM := maguro/BoardConfigMaguro.mk
 -include vendor/broadcom/$(LOCAL_STEM)
 -include vendor/csr/$(LOCAL_STEM)
 -include vendor/imgtec/$(LOCAL_STEM)
+-include vendor/invensense/$(LOCAL_STEM)
 -include vendor/nxp/$(LOCAL_STEM)
 -include vendor/samsung/$(LOCAL_STEM)
 -include vendor/ti/$(LOCAL_STEM)
+-include vendor/widevine/$(LOCAL_STEM)
