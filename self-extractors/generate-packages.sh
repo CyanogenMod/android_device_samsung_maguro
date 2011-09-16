@@ -23,7 +23,7 @@ ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
 
-for COMPANY in broadcom csr imgtec invensense nxp samsung ti widevine
+for COMPANY in broadcom csr imgtec invensense nxp samsung ti
 do
   echo Processing files from $COMPANY
   rm -rf tmp
@@ -78,15 +78,6 @@ do
   ti)
     TO_EXTRACT="\
             system/vendor/firmware/ducati-m3.bin \
-            "
-    ;;
-  widevine)
-    TO_EXTRACT="\
-            system/etc/permissions/com.google.widevine.software.drm.xml \
-            system/lib/drm/libdrmwvmplugin.so \
-            system/lib/libwvdrm_L3.so \
-            system/lib/libwvm.so \
-            system/lib/libWVStreamControlAPI_L3.so \
             "
     ;;
   esac
