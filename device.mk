@@ -22,7 +22,8 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/maguro/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES := \
-	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+	device/samsung/maguro/init.tuna.usb.rc:root/init.tuna.usb.rc
 
 $(call inherit-product, device/samsung/tuna/device.mk)
 $(call inherit-product-if-exists, vendor/samsung/maguro/device-vendor.mk)
