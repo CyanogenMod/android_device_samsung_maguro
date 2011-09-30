@@ -16,6 +16,7 @@ LOCAL_PATH := vendor/samsung/maguro
 
 # Samsung blob(s) necessary for Maguro hardware
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/fRom:system/bin/fRom \
     $(LOCAL_PATH)/proprietary/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/libsec-ril.so:system/vendor/lib/libsec-ril.so \
 

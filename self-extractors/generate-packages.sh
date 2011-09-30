@@ -71,6 +71,7 @@ do
     ;;
   samsung)
     TO_EXTRACT="\
+            system/bin/fRom \
             system/lib/libsecril-client.so \
             system/vendor/lib/libsec-ril.so \
             "
@@ -86,7 +87,7 @@ do
   do
     echo \ \ \ \ Extracting $ONE_FILE
     unzip -j -o $ZIP $ONE_FILE -d $FILEDIR > /dev/null || echo \ \ \ \ Error extracting $ONE_FILE
-    if test $ONE_FILE = system/vendor/bin/gpsd -o $ONE_FILE = system/vendor/bin/pvrsrvinit
+    if test $ONE_FILE = system/vendor/bin/gpsd -o $ONE_FILE = system/vendor/bin/pvrsrvinit -o $ONE_FILE = system/bin/fRom
     then
       chmod a+x $FILEDIR/$(basename $ONE_FILE) || echo \ \ \ \ Error chmoding $ONE_FILE
     fi
