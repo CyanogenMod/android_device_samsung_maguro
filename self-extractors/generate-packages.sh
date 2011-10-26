@@ -17,8 +17,9 @@
 # 155376 = IRK28C
 # 156135 = IRK32
 # 186921 = IRK77
-ZIP=yakju-ota-186921.zip
-BUILD=irk77
+# 213821 = ICL26
+ZIP=yakju-ota-213821.zip
+BUILD=icl26
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
