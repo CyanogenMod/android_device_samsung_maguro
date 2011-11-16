@@ -1,4 +1,4 @@
 require board=tuna
-require version-bootloader=PRIMEKJ10|PRIMEKK13
-require version-baseband=I9250XXKK2
+require version-bootloader=PRIMEKJ10|PRIMEKK14
+require version-baseband=I9250XXKK1|I9250XXKK2
 
