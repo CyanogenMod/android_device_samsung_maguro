@@ -15,8 +15,8 @@
 # limitations under the License.
 
 # 223971 = ITL41D
-# 229300 = ITL41F
-ZIP=yakju-ota-229300.zip
+# 228551 = ITL41F
+ZIP=yakju-ota-228551.zip
 BUILD=itl41f
 ROOTDEVICE=maguro
 DEVICE=maguro
