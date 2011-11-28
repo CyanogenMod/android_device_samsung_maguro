@@ -1,18 +1,17 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/maguro/device.mk)
+
+# Release name
+PRODUCT_RELEASE_NAME := GN
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/maguro/device.mk)
+## Specify phone tech before including full_phone
+$(call inherit-product, vendor/cm/config/gsm.mk)
 
+# Product name
 PRODUCT_NAME := cm_maguro
-
-# Release name and versioning
-PRODUCT_RELEASE_NAME := GN
-PRODUCT_VERSION_DEVICE_SPECIFIC :=
--include vendor/cm/config/common_versions.mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := maguro
