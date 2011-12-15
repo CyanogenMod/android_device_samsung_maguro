@@ -19,8 +19,9 @@
 # 236517 = IML70C
 # 237179 = IML73
 # 237867 = IML74B
-ZIP=yakju-ota-237867.zip
-BUILD=iml74b
+# 238432 = IML74E
+ZIP=yakju-ota-238432.zip
+BUILD=iml74e
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
