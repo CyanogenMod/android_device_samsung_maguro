@@ -1,0 +1,8 @@
+Change-Id: I2f33d1b14ac147cb654aa48986680aaf6fe6028d
+Code-Review+2: Steve Kondik <shade@chemlab.org>
+Verified+1: Steve Kondik <shade@chemlab.org>
+Submitted-by: Steve Kondik <shade@chemlab.org>
+Submitted-at: Wed, 28 Dec 2011 00:14:52 +0300
+Reviewed-on: http://review.cyanogenmod.com/11269
+Project: CyanogenMod/android_device_samsung_maguro
+Branch: refs/heads/ics
