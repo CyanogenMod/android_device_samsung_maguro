@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/nxp/maguro
-
 # NXP blob(s) necessary for Maguro hardware
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
-
+PRODUCT_PACKAGES := \
+    libpn544_fw
