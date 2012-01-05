@@ -15,6 +15,7 @@ PRODUCT_DEVICE := maguro
 PRODUCT_NAME := cm_maguro
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Galaxy Nexus
+PRODUCT_MANUFACTURER := Samsung
 
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_ID=IML74K BUILD_DISPLAY_ID=IML74K BUILD_FINGERPRINT="google/yakju/maguro:4.0.2/ICL53F/235179:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.0.2 ICL53F 235179 release-keys"
