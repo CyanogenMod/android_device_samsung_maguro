@@ -23,6 +23,14 @@ mkdir -p ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/bin/fRom ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/fRom
 chmod 755 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/fRom
 adb pull /system/lib/libsecril-client.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsecril-client.so
+adb pull /system/media/LMprec_508.emd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/LMprec_508.emd
+adb pull /system/media/PFFprec_600.emd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/PFFprec_600.emd
+adb pull /system/media/video/AndroidInSpace.240p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/AndroidInSpace.240p.mp4
+adb pull /system/media/video/AndroidInSpace.480p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/AndroidInSpace.480p.mp4
+adb pull /system/media/video/Disco.240p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Disco.240p.mp4
+adb pull /system/media/video/Disco.480p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Disco.480p.mp4
+adb pull /system/media/video/Sunset.240p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Sunset.240p.mp4
+adb pull /system/media/video/Sunset.480p.mp4 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/Sunset.480p.mp4
 adb pull /system/vendor/bin/pvrsrvinit ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/pvrsrvinit
 chmod 755 ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/pvrsrvinit
 adb pull /system/vendor/etc/sirfgps.conf ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/sirfgps.conf
@@ -70,6 +78,14 @@ PRODUCT_COPY_FILES := \\
 PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/fRom:system/bin/fRom \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:system/lib/libsecril-client.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/LMprec_508.emd:system/media/LMprec_508.emd \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/PFFprec_600.emd:system/media/PFFprec_600.emd \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/pvrsrvinit:system/vendor/bin/pvrsrvinit \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \\
