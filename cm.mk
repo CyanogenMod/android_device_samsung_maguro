@@ -10,6 +10,9 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
+# Inherit camera effects videos
+$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := maguro
 PRODUCT_NAME := cm_maguro
