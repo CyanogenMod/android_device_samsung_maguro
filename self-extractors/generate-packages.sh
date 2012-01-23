@@ -51,7 +51,7 @@ do
     ;;
   imgtec)
     TO_EXTRACT="\
-            system/vendor/bin/pvrsrvinit \
+            system/vendor/bin/pvrsrvctl \
             system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
             system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
             system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
