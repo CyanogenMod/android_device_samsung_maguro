@@ -17,9 +17,9 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),maguro)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := pvrsrvinit
+LOCAL_MODULE := pvrsrvctl
 LOCAL_MODULE_OWNER := imgtec
-LOCAL_SRC_FILES := pvrsrvinit
+LOCAL_SRC_FILES := pvrsrvctl
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/bin
