@@ -16,7 +16,7 @@
 
 /system/bin/fRom
 /system/lib/libsecril-client.so
-/system/vendor/bin/pvrsrvinit
+/system/vendor/bin/pvrsrvctl
 /system/vendor/etc/sirfgps.conf
 /system/vendor/firmware/bcm4330.hcd
 /system/vendor/firmware/ducati-m3.bin
