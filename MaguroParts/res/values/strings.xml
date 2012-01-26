@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Galaxy Nexus Settings</string>
+
+    <!-- Page Headers -->
+    <string name="general_title">GENERAL</string>
+    <string name="display_title">DISPLAY</string>
+
+    <string name="category_screen_title">WM8994 Settings ( voodoo )</string>
+    <string name="gamma_tuning_title_head">Color Gamma Tuning</string>
+    <string name="gamma_tuning_summary_head">Calibrate gamma color correction</string>
+    <string name="color_red_title">Red</string>
+    <string name="color_green_title">Green</string>
+    <string name="color_blue_title">Blue</string>
+
+    <string name="category_radio_title">Radio</string>
+    <string name="hspa_title_head">HSPA</string>
+    <string name="hspa_summary_head">Enable HSDPA/HSUPA</string>
+</resources>
