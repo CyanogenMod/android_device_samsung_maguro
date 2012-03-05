@@ -2,6 +2,6 @@
 # version of the radio and bootloader that are available to the
 # public.
 require board=tuna
-require version-bootloader=PRIMEKJ10|PRIMEKK15|PRIMEKL01|PRIMELA03
+require version-bootloader=PRIMEKJ10|PRIMEKK15|PRIMEKL01|PRIMELB02
 require version-baseband=I9250XXKK6|I9250XXLA1|9250XXLA2
 
