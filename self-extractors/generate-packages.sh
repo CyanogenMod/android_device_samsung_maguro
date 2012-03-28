@@ -25,10 +25,22 @@
 # 257829 = IMM30B
 # 262866 = IMM30D
 # 299849 = IMM76D
+# end ics-mr1
+# start jellybean
 # 241580 = IRL89
 # 241968 = IRM03
-ZIP=yakju-ota-241968.zip
-BUILD=irm03
+# end jellybean
+BRANCH=jellybean
+if test $BRANCH=ics-mr1
+then
+  ZIP=yakju-ota-299849.zip
+  BUILD=imm76d
+fi # ics-mr1
+if test $BRANCH=jellybean
+then
+  ZIP=yakju-ota-241968.zip
+  BUILD=irm03
+fi # jellybean
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
