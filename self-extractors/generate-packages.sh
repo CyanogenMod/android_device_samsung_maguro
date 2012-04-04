@@ -14,12 +14,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# 155376 = IRK28C
-# 156135 = IRK32
-# 186921 = IRK77
-# 213821 = ICL26
-ZIP=yakju-ota-213821.zip
-BUILD=icl26
+# 223971 = ITL41D
+# 229300 = ITL41F
+ZIP=yakju-ota-229300.zip
+BUILD=itl41f
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
