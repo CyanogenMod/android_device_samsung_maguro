@@ -20,4 +20,4 @@ sleep 5
 fastboot flash radio radio-maguro-i9250xxkk1.img
 fastboot reboot-bootloader
 sleep 5
-fastboot -w update image-yakju-itl41d.zip
+fastboot -w update image-yakju-itl41f.zip
