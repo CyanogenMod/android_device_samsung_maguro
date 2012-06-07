@@ -18,20 +18,21 @@
 # 228551 = ITL41F
 # 235179 = ICL53F
 # 299849 = IMM76D
+# 330937 = IMM76I
 
-BUILD=299849
+BUILD=330937
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=imm76d
+VERSION=imm76i
 BOOTLOADER=primela03
 RADIO=i9250xxla02
 
 source ../../../common/generate-factory-images-common.sh
 
-BUILD=299849
+BUILD=330937
 DEVICE=maguro
 PRODUCT=takju
-VERSION=imm76d
+VERSION=imm76i
 BOOTLOADER=primela03
 RADIO=i9250xxla02
 
