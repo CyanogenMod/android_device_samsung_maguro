@@ -1,7 +1,7 @@
 # mount point	fstype		device
 
 # there is no actual sdcard in this thing...
-#/sdcard		vfat		/dev/block/sda1
+/sdcard         datamedia       /dev/null
 /system		ext4		/dev/block/platform/omap/omap_hsmmc.0/by-name/system
 /cache		ext4		/dev/block/platform/omap/omap_hsmmc.0/by-name/cache
 /data		auto		/dev/block/platform/omap/omap_hsmmc.0/by-name/userdata
