@@ -20,22 +20,23 @@
 # 299849 = IMM76D
 # 330937 = IMM76I
 # 397360 = JRO02C
+# 398337 = JRO03C
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=397360
+BUILD=398337
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jro02c
+VERSION=jro03c
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
 source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=397360
+BUILD=398337
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jro02c
+VERSION=jro03c
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
