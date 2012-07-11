@@ -12,9 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/ti/maguro
-
-# TI blob(s) necessary for Maguro hardware
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin \
-
+# Samsung blob(s) necessary for Maguro hardware
+PRODUCT_PACKAGES := \
+    fRom \
+    libsec-ril \
+    libsecril-client

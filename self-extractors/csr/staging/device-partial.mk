@@ -12,12 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_STEM := maguro/device-partial.mk
-
-$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/csr/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/imgtec/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/invensense/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/nxp/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
-$(call inherit-product-if-exists, vendor/ti/$(LOCAL_STEM))
+# CSR blob(s) necessary for Maguro hardware
+PRODUCT_PACKAGES := \
+    sirfgps \
+    gps.omap4

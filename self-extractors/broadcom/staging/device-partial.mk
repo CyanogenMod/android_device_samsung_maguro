@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/invensense/maguro
-
-# Invensense blob(s) necessary for Maguro hardware
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/libinvensense_mpl.so:system/vendor/lib/libinvensense_mpl.so \
-
+# Broadcom blob(s) necessary for Maguro hardware
+PRODUCT_PACKAGES := \
+    bcm4330

@@ -25,14 +25,22 @@
 # 257829 = IMM30B
 # 262866 = IMM30D
 # 299849 = IMM76D
-# 330937 = IMM76I
 # end ics-mr1
-BRANCH=ics-mr1
+# start jellybean
+# 241580 = IRL89
+# 241968 = IRM03
+# end jellybean
+BRANCH=jellybean
 if test $BRANCH=ics-mr1
 then
-  ZIP=yakju-ota-330937.zip
-  BUILD=imm76i
+  ZIP=yakju-ota-299849.zip
+  BUILD=imm76d
 fi # ics-mr1
+if test $BRANCH=jellybean
+then
+  ZIP=yakju-ota-241968.zip
+  BUILD=irm03
+fi # jellybean
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
@@ -58,7 +66,7 @@ do
     ;;
   imgtec)
     TO_EXTRACT="\
-            system/vendor/bin/pvrsrvinit \
+            system/vendor/bin/pvrsrvctl \
             system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
             system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
             system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \

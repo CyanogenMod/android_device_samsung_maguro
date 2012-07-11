@@ -12,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/csr/maguro
-
-# CSR blob(s) necessary for Maguro hardware
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/proprietary/sirfgps.conf:system/vendor/etc/sirfgps.conf \
-    $(LOCAL_PATH)/proprietary/gps.omap4.so:system/vendor/lib/hw/gps.omap4.so \
-
+# Invensense blob(s) necessary for Maguro hardware
+PRODUCT_PACKAGES := \
+    libinvensense_mpl

@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,25 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# 223971 = ITL41D
-# 228551 = ITL41F
-# 235179 = ICL53F
-# 299849 = IMM76D
+LOCAL_PATH := $(call my-dir)
 
-BUILD=299849
-DEVICE=maguro
-PRODUCT=yakju
-VERSION=imm76d
-BOOTLOADER=primela03
-RADIO=i9250xxla02
+ifeq ($(TARGET_DEVICE),maguro)
 
-source ../../../common/generate-factory-images-common.sh
+include $(CLEAR_VARS)
+LOCAL_MODULE := gps.omap4
+LOCAL_MODULE_OWNER := csr
+LOCAL_SRC_FILES := gps.omap4.so
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/lib/hw
+include $(BUILD_PREBUILT)
 
-BUILD=299849
-DEVICE=maguro
-PRODUCT=takju
-VERSION=imm76d
-BOOTLOADER=primela03
-RADIO=i9250xxla02
+include $(CLEAR_VARS)
+LOCAL_MODULE := sirfgps
+LOCAL_MODULE_OWNER := csr
+LOCAL_SRC_FILES := sirfgps.conf
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .conf
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc
+include $(BUILD_PREBUILT)
 
-source ../../../common/generate-factory-images-common.sh
+endif
