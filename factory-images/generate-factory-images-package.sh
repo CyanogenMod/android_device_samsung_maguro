@@ -14,25 +14,40 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# start ics
 # 223971 = ITL41D
 # 228551 = ITL41F
-# 235179 = ICL53F
+# 236517 = IML70C
+# 237179 = IML73
+# 237867 = IML74B
+# 238432 = IML74E
+# 238649 = IML74G
+# 239410 = IML74K
+# 257829 = IMM30B
+# 262866 = IMM30D
 # 299849 = IMM76D
+# 330937 = IMM76I
+# end ics
+# start jellybean
+# 241580 = IRL89
+# 241968 = IRM03
+# 398337 = JRO03C
+# end jellybean
 
-BUILD=299849
+BUILD=398337
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=imm76d
-BOOTLOADER=primela03
-RADIO=i9250xxla02
+VERSION=jro03c
+BOOTLOADER=primelc03
+RADIO=i9250xxlf1
 
 source ../../../common/generate-factory-images-common.sh
 
-BUILD=299849
+BUILD=398337
 DEVICE=maguro
 PRODUCT=takju
-VERSION=imm76d
-BOOTLOADER=primela03
-RADIO=i9250xxla02
+VERSION=jro03c
+BOOTLOADER=primelc03
+RADIO=i9250xxlf1
 
 source ../../../common/generate-factory-images-common.sh

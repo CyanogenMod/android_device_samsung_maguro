@@ -14,6 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# start ics
 # 223971 = ITL41D
 # 228551 = ITL41F
 # 236517 = IML70C
@@ -25,21 +26,23 @@
 # 257829 = IMM30B
 # 262866 = IMM30D
 # 299849 = IMM76D
-# end ics-mr1
+# 330937 = IMM76I
+# end ics
 # start jellybean
 # 241580 = IRL89
 # 241968 = IRM03
+# 398337 = JRO03C
 # end jellybean
 BRANCH=jellybean
 if test $BRANCH=ics-mr1
 then
-  ZIP=yakju-ota-299849.zip
-  BUILD=imm76d
+  ZIP=yakju-ota-330937.zip
+  BUILD=imm76i
 fi # ics-mr1
 if test $BRANCH=jellybean
 then
-  ZIP=yakju-ota-241968.zip
-  BUILD=irm03
+  ZIP=yakju-ota-398337.zip
+  BUILD=jro03c
 fi # jellybean
 ROOTDEVICE=maguro
 DEVICE=maguro
