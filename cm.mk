@@ -5,7 +5,7 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 PRODUCT_RELEASE_NAME := GN-GSM
 
 # Boot animation
-TARGET_BOOTANIMATION_NAME := vertical-720x1280
+TARGET_BOOTANIMATION_NAME := vertical-720
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
