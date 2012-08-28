@@ -99,6 +99,10 @@ do
             system/bin/fRom \
             system/lib/libsecril-client.so \
             system/vendor/lib/libsec-ril.so \
+            system/vendor/lib/drm/libdrmwvmplugin.so \
+            system/vendor/lib/libWVStreamControlAPI_L1.so \
+            system/vendor/lib/libwvm.so \
+            system/vendor/lib/libwvdrm_L1.so \
             "
     ;;
   ti)
