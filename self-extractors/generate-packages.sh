@@ -53,7 +53,7 @@ if test $BRANCH=jb-mr1-dev
 then
   ZIP=yakju-ota-465036.zip
   BUILD=joo75
-fi # jb-dev
+fi # jb-mr1-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
