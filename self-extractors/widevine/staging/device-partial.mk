@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Broadcom blob(s) necessary for Maguro hardware
+# Widevine blob(s) necessary for Maguro hardware
 PRODUCT_PACKAGES := \
-    bcm4330 \
-    libbt-vendor
+    libdrmdecrypt
