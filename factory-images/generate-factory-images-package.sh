@@ -21,6 +21,7 @@
 # 330937 = IMM76I
 # 397360 = JRO02C
 # 398337 = JRO03C
+# 477516 = JZO54I
 
 source ../../../common/clear-factory-images-variables.sh
 BUILD=398337
@@ -30,13 +31,13 @@ VERSION=jro03c
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
-source ../../../common/generate-factory-images-common.sh
+#source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=398337
+BUILD=477516
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jro03c
+VERSION=jzo54i
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
