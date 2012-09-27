@@ -24,14 +24,14 @@
 # 477516 = JZO54I
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=398337
+BUILD=477516
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jro03c
+VERSION=jzo54i
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
-#source ../../../common/generate-factory-images-common.sh
+source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
 BUILD=477516
