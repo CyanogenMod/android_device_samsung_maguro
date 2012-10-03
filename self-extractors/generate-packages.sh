@@ -35,6 +35,7 @@
 # 405518 = JRO03H
 # 438695 = JRO03R
 # 463694 = JZO54G
+# 485486 = JZO54K
 # end jb-dev
 # start jb-mr1-dev
 # 465036 = JOO75
@@ -47,8 +48,8 @@ then
 fi # ics-mr1
 if test $BRANCH=jb-dev
 then
-  ZIP=yakju-ota-463694.zip
-  BUILD=jzo54g
+  ZIP=yakju-ota-485486.zip
+  BUILD=jzo54k
 fi # jb-dev
 if test $BRANCH=jb-mr1-dev
 then
