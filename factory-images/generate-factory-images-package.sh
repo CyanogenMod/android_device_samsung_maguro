@@ -22,22 +22,23 @@
 # 397360 = JRO02C
 # 398337 = JRO03C
 # 477516 = JZO54I
+# 485486 = JZO54K
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=477516
+BUILD=485486
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jzo54i
+VERSION=jzo54k
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
 source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=477516
+BUILD=485486
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jzo54i
+VERSION=jzo54k
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
