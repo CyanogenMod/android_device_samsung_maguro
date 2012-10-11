@@ -27,7 +27,6 @@
 /system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
 /system/vendor/lib/hw/gps.omap4.so
 /system/vendor/lib/hw/gralloc.omap4.so
-/system/vendor/lib/libbt-vendor.so
 /system/vendor/lib/libglslcompiler.so
 /system/vendor/lib/libIMGegl.so
 /system/vendor/lib/libinvensense_mpl.so
