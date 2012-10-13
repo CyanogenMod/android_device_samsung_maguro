@@ -44,6 +44,7 @@
     <value>700000</value>
     <value>920000</value>
     <value>1200000</value>
+    <value>1350000</value>
   </array>
   <!-- Power consumption in suspend -->
   <item name="cpu.idle">7</item>
@@ -55,5 +56,6 @@
       <value>228</value>
       <value>299</value>
       <value>397</value>
+      <value>455</value>
   </array>
 </device>
