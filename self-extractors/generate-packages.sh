@@ -39,6 +39,7 @@
 # end jb-dev
 # start jb-mr1-dev
 # 465036 = JOO75
+# 521994 = JOP32B
 # end jb-mr1-dev
 BRANCH=jb-mr1-dev
 if test $BRANCH=ics-mr1
@@ -53,8 +54,8 @@ then
 fi # jb-dev
 if test $BRANCH=jb-mr1-dev
 then
-  ZIP=yakju-ota-465036.zip
-  BUILD=joo75
+  ZIP=yakju-ota-521994.zip
+  BUILD=jop32b
 fi # jb-mr1-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
@@ -71,7 +72,6 @@ do
   broadcom)
     TO_EXTRACT="\
             system/vendor/firmware/bcm4330.hcd \
-            system/vendor/lib/libbt-vendor.so \
             "
     ;;
   csr)
