@@ -40,6 +40,7 @@
 # start jb-mr1-dev
 # 465036 = JOO75
 # 521994 = JOP32B
+# 524024 = JOP36
 # end jb-mr1-dev
 BRANCH=jb-mr1-dev
 if test $BRANCH=ics-mr1
@@ -54,8 +55,8 @@ then
 fi # jb-dev
 if test $BRANCH=jb-mr1-dev
 then
-  ZIP=yakju-ota-521994.zip
-  BUILD=jop32b
+  ZIP=yakju-ota-524024.zip
+  BUILD=jop36
 fi # jb-mr1-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
