@@ -2,7 +2,7 @@
  {
    "repository": "android_kernel_samsung_tuna",
    "target_path": "kernel/samsung/tuna",
-   "branch": "jb"
+   "branch": "jellybean"
  },
  {
    "repository": "android_device_samsung_tuna",
