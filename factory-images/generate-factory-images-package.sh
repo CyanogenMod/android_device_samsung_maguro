@@ -24,22 +24,23 @@
 # 477516 = JZO54I
 # 485486 = JZO54K
 # 526897 = JOP39B
+# 527221 = JOP40
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=526897
+BUILD=527221
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jop39b
+VERSION=jop40
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlh1
 source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=526897
+BUILD=527221
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jop39b
+VERSION=jop40
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlh1
