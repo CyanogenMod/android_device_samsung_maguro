@@ -27,7 +27,7 @@
   <item name="screen.full">160</item> <!-- 360 max on calendar -->
   <item name="wifi.on">1</item>
   <item name="wifi.active">150</item>
-  <item name="wifi.scan">200</item>
+  <item name="wifi.scan">100</item>
   <item name="dsp.audio">150</item>
   <item name="dsp.video">200</item>
   <item name="radio.active">150</item>

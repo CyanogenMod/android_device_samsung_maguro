@@ -26,29 +26,41 @@
 # 257829 = IMM30B
 # 262866 = IMM30D
 # 299849 = IMM76D
-# 330937 = IMM76I
-# end ics
-# start jellybean
+# end ics-mr1
+# start jb-dev
 # 241580 = IRL89
 # 241968 = IRM03
+# 391496 = JRN83D
+# 397816 = JRO03B
 # 398337 = JRO03C
-# end jellybean
-BRANCH=jellybean
+# 405518 = JRO03H
+# 438695 = JRO03R
+# 463694 = JZO54G
+# end jb-dev
+# start jb-mr1-dev
+# 465036 = JOO75
+# end jb-mr1-dev
+BRANCH=jb-mr1-dev
 if test $BRANCH=ics-mr1
 then
   ZIP=yakju-ota-330937.zip
   BUILD=imm76i
 fi # ics-mr1
-if test $BRANCH=jellybean
+if test $BRANCH=jb-dev
 then
-  ZIP=yakju-ota-398337.zip
-  BUILD=jro03c
-fi # jellybean
+  ZIP=yakju-ota-463694.zip
+  BUILD=jzo54g
+fi # jb-dev
+if test $BRANCH=jb-mr1-dev
+then
+  ZIP=yakju-ota-465036.zip
+  BUILD=joo75
+fi # jb-mr1-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
 
-for COMPANY in broadcom csr imgtec invensense nxp samsung ti
+for COMPANY in broadcom csr imgtec invensense nxp samsung ti widevine
 do
   echo Processing files from $COMPANY
   rm -rf tmp
@@ -59,6 +71,7 @@ do
   broadcom)
     TO_EXTRACT="\
             system/vendor/firmware/bcm4330.hcd \
+            system/vendor/lib/libbt-vendor.so \
             "
     ;;
   csr)
@@ -106,6 +119,11 @@ do
             system/vendor/firmware/ducati-m3.bin \
             "
     ;;
+  widevine)
+    TO_EXTRACT="\
+            system/lib/libdrmdecrypt.so \
+            "
+    ;;
   esac
   echo \ \ Extracting files from OTA package
   for ONE_FILE in $TO_EXTRACT
@@ -115,14 +133,6 @@ do
     if test $ONE_FILE = system/vendor/bin/gpsd -o $ONE_FILE = system/vendor/bin/pvrsrvinit -o $ONE_FILE = system/bin/fRom
     then
       chmod a+x $FILEDIR/$(basename $ONE_FILE) || echo \ \ \ \ Error chmoding $ONE_FILE
-    fi
-    if test $(echo $ONE_FILE | grep \\.apk\$ | wc -l) = 1
-    then
-      echo \ \ \ \ Splitting $ONE_FILE
-      mkdir -p $FILEDIR/$(basename $ONE_FILE).parts || echo \ \ \ \ Error making parts dir for $ONE_FILE
-      unzip $FILEDIR/$(basename $ONE_FILE) -d $FILEDIR/$(basename $ONE_FILE).parts > /dev/null || echo \ \ \ \ Error unzipping $ONE_FILE
-      rm $FILEDIR/$(basename $ONE_FILE) || echo \ \ \ \ Error removing original $ONE_FILE
-      rm -rf $FILEDIR/$(basename $ONE_FILE).parts/META-INF || echo \ \ \ \ Error removing META-INF for $ONE_FILE
     fi
   done
   echo \ \ Setting up $COMPANY-specific makefiles

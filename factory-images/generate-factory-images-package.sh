@@ -33,21 +33,25 @@
 # 241968 = IRM03
 # 398337 = JRO03C
 # end jellybean
+# 397360 = JRO02C
+# 398337 = JRO03C
 
+source ../../../common/clear-factory-images-variables.sh
 BUILD=398337
 DEVICE=maguro
 PRODUCT=yakju
 VERSION=jro03c
+SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
-
 source ../../../common/generate-factory-images-common.sh
 
+source ../../../common/clear-factory-images-variables.sh
 BUILD=398337
 DEVICE=maguro
 PRODUCT=takju
 VERSION=jro03c
+SRCPREFIX=signed-
 BOOTLOADER=primelc03
 RADIO=i9250xxlf1
-
 source ../../../common/generate-factory-images-common.sh
