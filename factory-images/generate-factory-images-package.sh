@@ -27,23 +27,24 @@
 # 527221 = JOP40
 # 527662 = JOP40C
 # 533553 = JOP40D
+# 551245 = JDP82
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=533553
+BUILD=551245
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jop40d
+VERSION=jdp82
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
-RADIO=i9250xxlh1
+RADIO=i9250xxlj1
 source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=533553
+BUILD=551245
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jop40d
+VERSION=jdp82
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
-RADIO=i9250xxlh1
+RADIO=i9250xxlj1
 source ../../../common/generate-factory-images-common.sh
