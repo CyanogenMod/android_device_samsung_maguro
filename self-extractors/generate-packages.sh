@@ -46,27 +46,28 @@
 # end jb-mr1-dev
 # start jb-mr1.1-dev
 # 551245 = JDP82
+# 573038 = JDQ39
 # end jb-mr1.1-dev
 BRANCH=jb-mr1.1-dev
-if test $BRANCH=ics-mr1
+if test $BRANCH = ics-mr1
 then
   ZIP=yakju-ota-299849.zip
   BUILD=imm76d
 fi # ics-mr1
-if test $BRANCH=jb-dev
+if test $BRANCH = jb-dev
 then
   ZIP=yakju-ota-485486.zip
   BUILD=jzo54k
 fi # jb-dev
-if test $BRANCH=jb-mr1-dev
+if test $BRANCH = jb-mr1-dev
 then
   ZIP=yakju-ota-527662.zip
   BUILD=jop40c
 fi # jb-mr1-dev
-if test $BRANCH=jb-mr1.1-dev
+if test $BRANCH = jb-mr1.1-dev
 then
-  ZIP=yakju-ota-551245
-  BUILD=jdp82
+  ZIP=yakju-ota-573038
+  BUILD=jdq39
 fi # jb-mr1.1-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
