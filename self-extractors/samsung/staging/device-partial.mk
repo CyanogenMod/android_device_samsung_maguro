@@ -16,4 +16,8 @@
 PRODUCT_PACKAGES := \
     fRom \
     libsec-ril \
-    libsecril-client
+    libsecril-client \
+    libdrmwvmplugin \
+    libWVStreamControlAPI_L1 \
+    libwvdrm_L1 \
+    libwvm
