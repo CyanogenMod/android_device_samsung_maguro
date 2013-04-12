@@ -48,7 +48,10 @@
 # 551245 = JDP82
 # 573038 = JDQ39
 # end jb-mr1.1-dev
-BRANCH=jb-mr1.1-dev
+# start jb-mr2-dev
+# 638589 = JWR11D
+# end jb-mr2-dev
+BRANCH=jb-mr2-dev
 if test $BRANCH = ics-mr1
 then
   ZIP=yakju-ota-299849.zip
@@ -69,6 +72,11 @@ then
   ZIP=yakju-ota-573038
   BUILD=jdq39
 fi # jb-mr1.1-dev
+if test $BRANCH = jb-mr2-dev
+then
+  ZIP=yakju-ota-638589
+  BUILD=jwr11d
+fi # jb-mr2-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
