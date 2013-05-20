@@ -50,6 +50,7 @@
 # end jb-mr1.1-dev
 # start jb-mr2-dev
 # 638589 = JWR11D
+# 681336 = JWR50
 # end jb-mr2-dev
 BRANCH=jb-mr2-dev
 if test $BRANCH = ics-mr1
@@ -74,8 +75,8 @@ then
 fi # jb-mr1.1-dev
 if test $BRANCH = jb-mr2-dev
 then
-  ZIP=yakju-ota-638589
-  BUILD=jwr11d
+  ZIP=yakju-ota-681336
+  BUILD=jwr50
 fi # jb-mr2-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
