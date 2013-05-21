@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,23 +29,24 @@
 # 533553 = JOP40D
 # 551245 = JDP82
 # 573038 = JDQ39
+# 683083 = JWR51
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=573038
+BUILD=683083
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jdq39
-SRCPREFIX=signed-
-BOOTLOADER=primelc03
+VERSION=jwr51
+#SRCPREFIX=signed-
+BOOTLOADER=primemd04
 RADIO=i9250xxlj1
 source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=573038
+BUILD=683083
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jdq39
-SRCPREFIX=signed-
-BOOTLOADER=primelc03
+VERSION=jwr51
+#SRCPREFIX=signed-
+BOOTLOADER=primemd04
 RADIO=i9250xxlj1
 source ../../../common/generate-factory-images-common.sh
