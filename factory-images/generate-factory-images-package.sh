@@ -31,22 +31,23 @@
 # 573038 = JDQ39
 # 683083 = JWR51
 # 689345 = JWR58
+# 690834 = JWR59
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=689345
+BUILD=690834
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jwr58
+VERSION=jwr59
 #SRCPREFIX=signed-
 BOOTLOADER=primemd04
 RADIO=i9250xxlj1
 source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=689345
+BUILD=690834
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jwr58
+VERSION=jwr59
 #SRCPREFIX=signed-
 BOOTLOADER=primemd04
 RADIO=i9250xxlj1
