@@ -36,31 +36,45 @@
 # 405518 = JRO03H
 # 438695 = JRO03R
 # 463694 = JZO54G
+# 485486 = JZO54K
 # end jb-dev
 # start jb-mr1-dev
 # 465036 = JOO75
+# 521994 = JOP32B
+# 524024 = JOP36
+# 527221 = JOP40
+# 527662 = JOP40C
 # end jb-mr1-dev
-BRANCH=jb-mr1-dev
-if test $BRANCH=ics-mr1
+# start jb-mr1.1-dev
+# 551245 = JDP82
+# 573038 = JDQ39
+# end jb-mr1.1-dev
+BRANCH=jb-mr1.1-dev
+if test $BRANCH = ics-mr1
 then
   ZIP=yakju-ota-330937.zip
   BUILD=imm76i
 fi # ics-mr1
-if test $BRANCH=jb-dev
+if test $BRANCH = jb-dev
 then
-  ZIP=yakju-ota-463694.zip
-  BUILD=jzo54g
+  ZIP=yakju-ota-485486.zip
+  BUILD=jzo54k
 fi # jb-dev
-if test $BRANCH=jb-mr1-dev
+if test $BRANCH = jb-mr1-dev
 then
-  ZIP=yakju-ota-465036.zip
-  BUILD=joo75
+  ZIP=yakju-ota-527662.zip
+  BUILD=jop40c
 fi # jb-mr1-dev
+if test $BRANCH = jb-mr1.1-dev
+then
+  ZIP=yakju-ota-573038
+  BUILD=jdq39
+fi # jb-mr1.1-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
 
-for COMPANY in broadcom csr imgtec invensense nxp samsung ti widevine
+for COMPANY in broadcom imgtec invensense nxp samsung widevine # csr ti
 do
   echo Processing files from $COMPANY
   rm -rf tmp
@@ -71,7 +85,6 @@ do
   broadcom)
     TO_EXTRACT="\
             system/vendor/firmware/bcm4330.hcd \
-            system/vendor/lib/libbt-vendor.so \
             "
     ;;
   csr)

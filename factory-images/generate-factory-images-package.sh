@@ -35,23 +35,31 @@
 # end jellybean
 # 397360 = JRO02C
 # 398337 = JRO03C
+# 477516 = JZO54I
+# 485486 = JZO54K
+# 526897 = JOP39B
+# 527221 = JOP40
+# 527662 = JOP40C
+# 533553 = JOP40D
+# 551245 = JDP82
+# 573038 = JDQ39
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=398337
+BUILD=573038
 DEVICE=maguro
 PRODUCT=yakju
-VERSION=jro03c
+VERSION=jdq39
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
-RADIO=i9250xxlf1
+RADIO=i9250xxlj1
 source ../../../common/generate-factory-images-common.sh
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=398337
+BUILD=573038
 DEVICE=maguro
 PRODUCT=takju
-VERSION=jro03c
+VERSION=jdq39
 SRCPREFIX=signed-
 BOOTLOADER=primelc03
-RADIO=i9250xxlf1
+RADIO=i9250xxlj1
 source ../../../common/generate-factory-images-common.sh
