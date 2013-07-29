@@ -14,7 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# start ics
 # 223971 = ITL41D
 # 228551 = ITL41F
 # 236517 = IML70C
@@ -69,8 +68,8 @@
 BRANCH=jb-mr2-dev
 if test $BRANCH = ics-mr1
 then
-  ZIP=yakju-ota-330937.zip
-  BUILD=imm76i
+  ZIP=yakju-ota-299849.zip
+  BUILD=imm76d
 fi # ics-mr1
 if test $BRANCH = jb-dev
 then
