@@ -1,4 +1,1 @@
 require board=tuna
-require version-bootloader=PRIMELA03|PRIMELC03
-require version-baseband=I9250XXLA2|I9250XXLF1
-
