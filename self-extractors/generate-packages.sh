@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright 2010 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -49,7 +49,24 @@
 # 551245 = JDP82
 # 573038 = JDQ39
 # end jb-mr1.1-dev
-BRANCH=jb-mr1.1-dev
+# start jb-mr2-dev
+# 638589 = JWR11D
+# 681336 = JWR50
+# 683083 = JWR51
+# 684634 = JWR52
+# 686185 = JWR53
+# 689345 = JWR58
+# 690834 = JWR59
+# 692263 = JWR60
+# 695489 = JWR64
+# 699533 = JWR66
+# 701448 = JWR66C
+# 704243 = JWR66G
+# 711294 = JWR66N
+# 736095 = JWR66U
+# 737497 = JWR66V
+# end jb-mr2-dev
+BRANCH=jb-mr2-dev
 if test $BRANCH = ics-mr1
 then
   ZIP=yakju-ota-330937.zip
@@ -70,6 +87,11 @@ then
   ZIP=yakju-ota-573038
   BUILD=jdq39
 fi # jb-mr1.1-dev
+if test $BRANCH = jb-mr2-dev
+then
+  ZIP=yakju-ota-737497
+  BUILD=jwr66v
+fi # jb-mr2-dev
 ROOTDEVICE=maguro
 DEVICE=maguro
 MANUFACTURER=samsung
