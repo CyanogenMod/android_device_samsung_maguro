@@ -26,8 +26,7 @@ PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 
 # Camera
 PRODUCT_PACKAGES := \
-    Gallery \
-    GNexusParts
+    Gallery2
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
