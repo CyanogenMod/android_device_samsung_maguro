@@ -6,6 +6,9 @@
  {
    "repository": "android_device_samsung_tuna",
    "target_path": "device/samsung/tuna"
+ },
+ {
+   "repository": "android_device_sample",
+   "target_path": "device/sample"
  }
 ]
-
