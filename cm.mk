@@ -12,7 +12,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/maguro/full_maguro.mk)
+$(call inherit-product, device/samsung/maguro/aosp_maguro.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := maguro
