@@ -11,3 +11,6 @@ ro.telephony.call_ring.multiple=0
 
 # GPU producer to CPU consumer not supported
 ro.bq.gpu_to_cpu_unsupported=1
+
+# Don't preload EGL drivers in Zygote at boot time.
+ro.zygote.disable_gl_preload=true
