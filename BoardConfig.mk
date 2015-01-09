@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Radio
+BOARD_RIL_CLASS := ../../../device/samsung/maguro/ril
+
 # Use the non-open-source part, if present
 -include vendor/samsung/maguro/BoardConfigVendor.mk
 
