@@ -21,6 +21,9 @@
 # lines, full and maguro, hence its name.
 #
 
+# Sounds for tuna
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage7.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # This is where we'd set a backup provider if we had one
