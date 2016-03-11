@@ -1,7 +1,7 @@
 #
 # system.prop for maguro
 #
-rild.libpath=/vendor/lib/libsec-ril.so
+rild.libpath=/system/lib/libsecril-shim.so
 rild.libargs=-d /dev/ttys0 --
 telephony.lteOnCdmaDevice=0
 
