@@ -18,7 +18,12 @@
 #
 # Everything in this directory will become public
 
-DEVICE_PACKAGE_OVERLAYS := device/samsung/maguro/overlay
+LOCAL_PATH := device/huawei/viva
+DEVCOMMON_PATH := device/huawei/omap4-common
+
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(DEVCOMMON_PATH)/overlay/cm
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES := \
@@ -26,3 +31,9 @@ PRODUCT_COPY_FILES := \
 
 $(call inherit-product, device/samsung/tuna/device.mk)
 $(call inherit-product-if-exists, vendor/samsung/maguro/maguro-vendor.mk)
+
+# Media / Audio
+PRODUCT_COPY_FILES += \
+    $(DEVCOMMON_PATH)/viva-common/configs/audio/viva_audio_config.conf:system/etc/huawei/audio/cm_viva_audio_config.conf
+
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
