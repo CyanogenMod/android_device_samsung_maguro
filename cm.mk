@@ -10,7 +10,7 @@ $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/maguro/aosp_maguro.mk)
+$(call inherit-product, device/huawei/viva/aosp_maguro.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := viva
